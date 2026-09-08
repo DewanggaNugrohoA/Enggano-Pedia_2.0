@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warna Utama - Dark Navy / Dark Teal (#0F3445) */
+    --forest:     #0F3445;
+    --jungle:     #17485e;
+    --leaf:       #24637d;
+    --moss:       #3a7d99;
+    --sage:       #8cb7c9;
+    --mint:       #e3f1f6;
+
+    --earth:      #5c3d2e;
+    --bark:       #7a523d;
+    --sand:       #e8f0f3;
+    --cream:      #f6fafc;
+
+    --ocean:      #17485e;
+    --teal:       #14b8a6;
+    --sky:        #87ceeb;
+
+    --gold:       #c9962a;
+    --white:      #ffffff;
+    --dark:       #081d27;
+
+    /* Spacing & Radius */
+    --radius-sm:  8px;
+    --radius-md:  16px;
+    --radius-lg:  24px;
+    --radius-xl:  40px;
+
+    /* Shadows */
+    --shadow-sm:  0 2px 8px rgba(15,52,69,.12);
+    --shadow-md:  0 8px 32px rgba(15,52,69,.18);
+    --shadow-lg:  0 20px 60px rgba(15,52,69,.25);
+
+    /* Transitions */
+    --ease:       cubic-bezier(0.25, 0.8, 0.25, 1);
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  body {
+    @apply bg-cream text-dark font-sans antialiased selection:bg-teal selection:text-white;
+  }
+}
+
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
