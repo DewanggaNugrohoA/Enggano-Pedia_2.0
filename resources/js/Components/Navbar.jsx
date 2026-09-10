@@ -38,9 +38,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           {/* Logo with Frosted Glass Pill matching Menu (Always Visible) */}
           <Link href="/" className="flex items-center group shrink-0">
-            <div className="bg-white/95 backdrop-blur-md px-5 py-2.5 md:px-7 md:py-3 rounded-full shadow-lg border border-forest/10 transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02] flex items-center">
+            <div className="bg-white/95 backdrop-blur-md px-4 py-2 md:px-5 md:py-2.5 rounded-full shadow-lg border border-forest/10 transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02] flex items-center gap-2.5">
+              <img 
+                src="/images/logo.png" 
+                alt="Enggano Pedia Logo" 
+                className="w-7 h-7 md:w-8 md:h-8 object-contain transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110"
+              />
               <span 
-                className="font-serif text-xl md:text-2xl font-bold tracking-wide"
+                className="font-serif text-lg md:text-xl font-bold tracking-wide"
                 style={{
                   background: 'linear-gradient(to right, #0F3445, #0d9488, #2563eb)',
                   WebkitBackgroundClip: 'text',
