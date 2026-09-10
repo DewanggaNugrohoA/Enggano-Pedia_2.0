@@ -36,15 +36,13 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
-          {/* Logo with Frosted Glass Pill matching Menu (Always Visible) */}
-          <Link href="/" className="flex items-center group shrink-0">
-            <div className="bg-white/95 backdrop-blur-md px-4 py-1.5 md:px-5 md:py-2 rounded-full shadow-lg border border-forest/10 transition-all duration-300 group-hover:shadow-xl group-hover:scale-[1.02] flex items-center">
-              <img 
-                src="/images/brand-logo.png" 
-                alt="EngganoPedia Logo" 
-                className="h-8 sm:h-9 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
+          {/* Logo (Floating without white background) */}
+          <Link href="/" className="flex items-center group shrink-0 py-1">
+            <img 
+              src="/images/brand-logo-white.png" 
+              alt="EngganoPedia Logo" 
+              className="h-8 sm:h-9 md:h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)]"
+            />
           </Link>
 
           {/* Desktop Menu (Hides on scroll, smoothly reappears on cursor hover) */}

@@ -8,13 +8,13 @@ export default function Footer() {
           
           {/* Brand */}
           <div className="space-y-3 text-left">
-            <div className="inline-block bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-lg border border-white/10">
+            <Link href="/" className="inline-block">
               <img 
-                src="/images/brand-logo.png" 
+                src="/images/brand-logo-white.png" 
                 alt="EngganoPedia Logo" 
-                className="h-8 md:h-9 w-auto object-contain"
+                className="h-8 sm:h-9 w-auto object-contain drop-shadow-md"
               />
-            </div>
+            </Link>
             <p className="text-xs leading-relaxed text-white/65 text-left max-w-sm">
               Temukan keajaiban alam asri, warisan budaya leluhur, dan keanekaragaman hayati yang tak tertandingi di ujung barat Samudera Hindia.
             </p>
