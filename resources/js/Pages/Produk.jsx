@@ -166,13 +166,13 @@ export default function Produk() {
 
   // Create formatted WhatsApp link
   const getWhatsAppLink = (product) => {
-    const message = `Halo ${product.sellerTitle}, saya tertarik dengan produk ${product.displayName || product.name} yang ada di website Enggano Pedia. Apakah stok saat ini masih tersedia?`;
+    const message = `Halo ${product.sellerTitle}, saya tertarik dengan produk ${product.displayName || product.name} yang ada di website EngganoPedia. Apakah stok saat ini masih tersedia?`;
     return `https://api.whatsapp.com/send/?phone=${product.waNumber}&text=${encodeURIComponent(message)}&type=phone_number&app_absent=0`;
   };
 
   return (
     <MainLayout>
-      <Head title="Produk Lokal & UMKM | Enggano Pedia" />
+      <Head title="Produk Lokal & UMKM | EngganoPedia" />
 
       {/* ─── HERO SECTION ─── */}
       <section className="relative min-h-[60vh] flex items-center justify-center pt-28 pb-20 overflow-hidden bg-forest">

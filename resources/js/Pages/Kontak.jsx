@@ -20,7 +20,7 @@ export default function Kontak() {
 
   return (
     <MainLayout>
-      <Head title="Hubungi Kami | Enggano Pedia" />
+      <Head title="Hubungi Kami | EngganoPedia" />
 
       {/* HEADER SECTION */}
       <section className="bg-forest pt-32 pb-16">

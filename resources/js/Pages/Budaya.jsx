@@ -176,7 +176,7 @@ export default function Budaya() {
 
   return (
     <MainLayout>
-      <Head title="Budaya Suku | Enggano Pedia" />
+      <Head title="Budaya Suku | EngganoPedia" />
 
       {/* ─── HEADER HERO SECTION ─── */}
       <section className="relative h-[60vh] flex items-center justify-center pt-20 overflow-hidden">

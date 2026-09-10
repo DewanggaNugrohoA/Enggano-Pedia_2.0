@@ -84,7 +84,7 @@ export default function Penginapan() {
 
   return (
     <MainLayout>
-      <Head title="Penginapan & Homestay | Enggano Pedia" />
+      <Head title="Penginapan & Homestay | EngganoPedia" />
 
       {/* ─── HERO SECTION ─── */}
       <section className="relative min-h-[55vh] flex items-center justify-center pt-28 pb-20 overflow-hidden bg-forest">

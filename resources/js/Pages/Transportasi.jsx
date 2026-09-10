@@ -256,7 +256,7 @@ export default function Transportasi() {
 
   return (
     <MainLayout>
-      <Head title="Transportasi | Enggano Pedia" />
+      <Head title="Transportasi | EngganoPedia" />
 
       {/* HERO */}
       <section className="relative h-[55vh] flex items-center justify-center pt-20">

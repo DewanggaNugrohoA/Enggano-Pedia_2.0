@@ -89,7 +89,7 @@ export default function Alam() {
 
   return (
     <MainLayout>
-      <Head title="Keindahan Alam | Enggano Pedia" />
+      <Head title="Keindahan Alam | EngganoPedia" />
 
       {/* HEADER SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center pt-20">

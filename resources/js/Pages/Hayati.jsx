@@ -51,7 +51,7 @@ export default function Hayati() {
 
   return (
     <MainLayout>
-      <Head title="Keanekaragaman Hayati | Enggano Pedia" />
+      <Head title="Keanekaragaman Hayati | EngganoPedia" />
 
       {/* HEADER SECTION */}
       <section className="relative h-[60vh] flex items-center justify-center pt-20">

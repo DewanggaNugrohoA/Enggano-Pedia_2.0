@@ -276,7 +276,7 @@ export default function Home() {
   return (
     <MainLayout>
       <Head>
-        <title>Beranda | Enggano Pedia</title>
+        <title>Beranda | EngganoPedia</title>
         <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
       </Head>
 

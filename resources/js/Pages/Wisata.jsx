@@ -187,7 +187,7 @@ export default function Wisata() {
 
   return (
     <MainLayout>
-      <Head title="Wisata | Enggano Pedia" />
+      <Head title="Wisata | EngganoPedia" />
 
       {/* ===== HERO VIDEO ===== */}
       <section ref={heroRef} className="relative h-screen overflow-hidden flex items-center justify-center bg-[#081d27]">
