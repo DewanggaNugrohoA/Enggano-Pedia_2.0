@@ -1,9 +1,0 @@
-import{s as e,t}from"./app-CM4dEejB.js";e();var n=t();function r({items:e=[],speed:t=40,direction:r=`left`,pauseOnHover:i=!0}){if(!e||e.length===0)return null;let a=[...e,...e,...e];return(0,n.jsxs)(`div`,{className:`relative flex overflow-hidden w-full h-full bg-transparent group`,children:[(0,n.jsx)(`div`,{className:`flex w-max animate-marquee ${i?`group-hover:[animation-play-state:paused]`:``} ${r===`right`?`[animation-direction:reverse]`:``}`,style:{"--duration":`${t}s`},children:a.map((e,t)=>(0,n.jsxs)(`div`,{className:`flex-shrink-0 mx-4 w-[260px] md:w-[360px] aspect-[4/5] rounded-2xl overflow-hidden relative shadow-lg group/card cursor-pointer`,children:[(0,n.jsx)(`img`,{src:e.img,alt:e.title,className:`w-full h-full object-cover transition-transform duration-700 group-hover/card:scale-110`}),(0,n.jsx)(`div`,{className:`absolute inset-0 bg-gradient-to-t from-dark/90 via-dark/40 to-transparent`}),(0,n.jsxs)(`div`,{className:`absolute bottom-0 left-0 right-0 p-6 transform transition-transform duration-300`,children:[(0,n.jsx)(`span`,{className:`inline-block px-3 py-1 bg-teal text-white text-xs font-bold rounded-full mb-3 uppercase tracking-wider shadow-sm`,children:e.cat}),(0,n.jsx)(`h3`,{className:`text-xl md:text-2xl font-serif font-bold text-white mb-2`,children:e.title}),(0,n.jsx)(`p`,{className:`text-white/80 text-xs md:text-sm line-clamp-2`,children:e.desc})]})]},t))}),(0,n.jsx)(`style`,{jsx:`true`,children:`
-        @keyframes marquee {
-          from { transform: translateX(0); }
-          to { transform: translateX(calc(-100% / 3)); }
-        }
-        .animate-marquee {
-          animation: marquee var(--duration) linear infinite;
-        }
-      `})]})}export{r as t};

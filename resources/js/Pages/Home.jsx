@@ -282,39 +282,13 @@ export default function Home() {
 
       {/* 1.1 HERO SECTION */}
       <section ref={heroRef} className="relative w-full h-screen overflow-hidden flex items-center justify-center bg-[#081d27]">
-        {/* Background Videos with Seamless Loop Crossfade */}
+        {/* Background Image */}
         <div className="hero-bg absolute inset-0 w-full h-[120%] -top-[10%] pointer-events-none overflow-hidden bg-[#081d27]">
-          <video
-            ref={videoRef1}
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
-            onCanPlay={() => setVideoReady(true)}
-            onPlay={() => setVideoReady(true)}
-            onEnded={() => handleEnded(1)}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-              videoReady && activeVideo === 1 ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <source src="/video/0901.mp4" type="video/mp4" />
-            <source src="/video/video 2.mp4" type="video/mp4" />
-            <source src="/video/video.mp4" type="video/mp4" />
-          </video>
-          <video
-            ref={videoRef2}
-            muted
-            playsInline
-            preload="auto"
-            onEnded={() => handleEnded(2)}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-              videoReady && activeVideo === 2 ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <source src="/video/0901.mp4" type="video/mp4" />
-            <source src="/video/video 2.mp4" type="video/mp4" />
-            <source src="/video/video.mp4" type="video/mp4" />
-          </video>
+          <img
+            src="/images/hero-bg.jpg"
+            alt="Keindahan Pulau Enggano"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
         
         {/* Overlay - balanced 45% tint */}

@@ -189,43 +189,15 @@ export default function Wisata() {
     <MainLayout>
       <Head title="Wisata | EngganoPedia" />
 
-      {/* ===== HERO VIDEO ===== */}
+      {/* ===== HERO IMAGE ===== */}
       <section ref={heroRef} className="relative h-screen overflow-hidden flex items-center justify-center bg-[#081d27]">
-        {/* Dual Video Seamless Background */}
+        {/* Hero Background Image */}
         <div className="wisata-hero-video absolute inset-0 w-full h-full scale-105 pointer-events-none overflow-hidden bg-[#081d27]">
-          <video
-            ref={videoRef1}
-            autoPlay
-            muted
-            playsInline
-            preload="auto"
-            onCanPlay={() => setVideoReady(true)}
-            onPlay={() => setVideoReady(true)}
-            onEnded={() => handleEnded(1)}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-              videoReady && activeVideo === 1 ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <source src="/video/0901.mp4" type="video/mp4" />
-            <source src="/video/video 2.mp4" type="video/mp4" />
-            <source src="/video/video.mp4" type="video/mp4" />
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-beach-with-turquoise-water-41018-large.mp4" type="video/mp4" />
-          </video>
-          <video
-            ref={videoRef2}
-            muted
-            playsInline
-            preload="auto"
-            onEnded={() => handleEnded(2)}
-            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${
-              videoReady && activeVideo === 2 ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            <source src="/video/0901.mp4" type="video/mp4" />
-            <source src="/video/video 2.mp4" type="video/mp4" />
-            <source src="/video/video.mp4" type="video/mp4" />
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-aerial-view-of-a-beach-with-turquoise-water-41018-large.mp4" type="video/mp4" />
-          </video>
+          <img
+            src="/images/hero-bg.jpg"
+            alt="Wisata Pulau Enggano"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
         </div>
 
         <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/30 to-dark/85 z-10 pointer-events-none"></div>
