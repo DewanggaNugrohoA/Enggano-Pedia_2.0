@@ -416,9 +416,9 @@ export default function Home() {
           </div>
 
           <div className="relative" ref={timelineRef}>
-            {/* Center Line Track & Animated Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-forest/20 h-full"></div>
-            <div className="timeline-line absolute left-1/2 transform -translate-x-1/2 w-1 bg-teal top-0 origin-top">
+            {/* Center Line Track & Animated Line (Desktop only) */}
+            <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-forest/20 h-full"></div>
+            <div className="timeline-line hidden md:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-teal top-0 origin-top">
               {/* Penyu di Ujung Garis Waktu */}
               <div className="timeline-turtle absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 z-30 pointer-events-none">
                 <div className="turtle-swimming w-10 h-10 flex items-center justify-center">
@@ -451,26 +451,36 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-12 md:space-y-16">
               {timelines.map((item, idx) => {
                 const isLeft = idx % 2 === 0;
                 return (
-                  <div key={idx} className={`timeline-item relative flex items-center justify-between w-full ${isLeft ? 'flex-row-reverse' : ''}`}>
-                    <div className="w-5/12">
+                  <div 
+                    key={idx} 
+                    className={`timeline-item relative flex flex-col md:flex-row items-center justify-between w-full gap-5 md:gap-0 ${
+                      isLeft ? 'md:flex-row-reverse' : ''
+                    }`}
+                  >
+                    {/* Image */}
+                    <div className="w-full md:w-5/12">
                       {item.img && (
                         <img
                           src={item.img}
                           alt={item.era}
                           loading="lazy"
-                          className="w-full h-44 md:h-52 object-cover rounded-2xl shadow-lg border border-forest/10 transition-transform duration-500 hover:scale-105"
+                          className="w-full h-48 sm:h-56 md:h-52 object-cover rounded-2xl shadow-lg border border-forest/10 transition-transform duration-500 hover:scale-105"
                         />
                       )}
                     </div>
-                    <div className="timeline-dot z-20 flex items-center bg-teal shadow-xl w-6 h-6 rounded-full border-4 border-white absolute left-1/2 transform -translate-x-1/2 transition-transform duration-300"></div>
-                    <div className={`w-5/12 ${isLeft ? 'text-right pr-8' : 'pl-8'}`}>
-                      <div className="bg-white p-6 rounded-xl shadow-sm border border-forest/5 hover:shadow-md transition-shadow">
-                        <h4 className="text-xl font-serif font-bold text-forest mb-2">{item.era}</h4>
-                        <p className="text-dark/70 text-sm leading-relaxed">{item.desc}</p>
+
+                    {/* Timeline Center Dot (Desktop only) */}
+                    <div className="timeline-dot z-20 hidden md:flex items-center bg-teal shadow-xl w-6 h-6 rounded-full border-4 border-white absolute left-1/2 transform -translate-x-1/2 transition-transform duration-300"></div>
+
+                    {/* Content Card */}
+                    <div className={`w-full md:w-5/12 ${isLeft ? 'md:text-right md:pr-8' : 'md:pl-8'}`}>
+                      <div className="bg-white p-5 sm:p-6 rounded-2xl shadow-sm border border-forest/5 hover:shadow-md transition-shadow text-left">
+                        <h4 className="text-lg sm:text-xl font-serif font-bold text-forest mb-2">{item.era}</h4>
+                        <p className="text-dark/75 text-sm sm:text-base leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
                   </div>
