@@ -43,7 +43,5 @@
         "SESSION_DRIVER": "cookie",
         "LOG_CHANNEL": "stderr",
         "QUEUE_CONNECTION": "sync"
-    },
-    "buildCommand": "npm install && npm run build",
-    "outputDirectory": "public"
+    }
 }
