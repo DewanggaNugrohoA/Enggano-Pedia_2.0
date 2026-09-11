@@ -39,10 +39,10 @@ export default function MainLayout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col bg-cream text-dark">
+    <div className="min-h-screen flex flex-col bg-cream text-dark w-full max-w-[100vw] overflow-x-hidden relative">
       <Navbar />
       
-      <main className="flex-grow">
+      <main className="flex-grow w-full max-w-[100vw] overflow-x-hidden">
         {children}
       </main>
 
