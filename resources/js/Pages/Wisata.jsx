@@ -203,7 +203,7 @@ export default function Wisata() {
         <div className="absolute inset-0 bg-gradient-to-b from-dark/85 via-dark/60 to-dark/90 z-10 pointer-events-none"></div>
 
         <div className="relative z-20 text-center px-4">
-          <h1 ref={titleRef} className="hero-title font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-[1.2]">
+          <h1 ref={titleRef} className="hero-title font-serif text-3xl sm:text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-[1.2]">
             <span className="block overflow-hidden pb-1">
               <span className="block pb-2 -mb-2">Jelajahi</span>
             </span>

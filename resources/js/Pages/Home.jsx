@@ -302,7 +302,7 @@ export default function Home() {
 
         {/* Content */}
         <div className="relative z-30 max-w-4xl mx-auto px-4 text-center mt-12">
-          <h1 ref={h1Ref} className="font-serif text-4xl sm:text-5xl md:text-6xl text-white font-bold leading-tight mb-2 whitespace-pre-line">
+          <h1 ref={h1Ref} className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-bold leading-tight mb-2 whitespace-pre-line">
             {""}
           </h1>
           <p className="hero-subtitle text-white/85 text-base sm:text-lg md:text-xl font-normal max-w-2xl mx-auto mt-2 leading-relaxed">

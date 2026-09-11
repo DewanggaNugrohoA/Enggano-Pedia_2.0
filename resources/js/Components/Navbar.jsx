@@ -67,33 +67,32 @@ export default function Navbar() {
           </div>
 
           {/* Hamburger */}
-          <div 
-            className={`md:hidden flex items-center transition-all duration-300 ${
-              showMenu || mobileMenuOpen 
-                ? 'opacity-100 translate-y-0 pointer-events-auto' 
-                : 'opacity-0 -translate-y-2 pointer-events-none group-hover/nav:opacity-100 group-hover/nav:translate-y-0 group-hover/nav:pointer-events-auto'
-            }`}
-          >
+          <div className="md:hidden flex items-center">
             <button 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="bg-white/95 backdrop-blur-md p-2.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.1)] border border-forest/5 text-forest hover:text-teal transition-colors"
+              className="bg-white/95 backdrop-blur-md p-2.5 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] border border-forest/10 text-forest hover:text-teal transition-colors"
+              aria-label="Toggle Menu"
             >
-              {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-forest shadow-xl border-t border-white/10">
-          <div className="px-4 pt-2 pb-6 space-y-4 flex flex-col items-center">
+        <div className="md:hidden fixed inset-x-0 top-[64px] bg-forest/95 backdrop-blur-xl shadow-2xl border-t border-white/10 z-50 transition-all duration-300">
+          <div className="px-6 py-6 space-y-2 flex flex-col items-stretch max-h-[calc(100vh-80px)] overflow-y-auto">
             {links.map((link) => (
               <Link 
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`block w-full text-center py-3 text-lg transition-colors ${url === link.href ? 'text-teal font-semibold' : 'text-white/80 hover:text-white'}`}
+                className={`block w-full text-left px-4 py-3 rounded-xl text-base font-medium transition-all ${
+                  url === link.href 
+                    ? 'bg-teal/20 text-teal font-bold border-l-4 border-teal pl-3' 
+                    : 'text-white/85 hover:bg-white/10 hover:text-white'
+                }`}
               >
                 {link.label}
               </Link>
