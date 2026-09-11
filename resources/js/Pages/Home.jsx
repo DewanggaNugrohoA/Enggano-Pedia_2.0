@@ -287,14 +287,14 @@ export default function Home() {
           <img
             src="/images/hero-bg.jpg"
             alt="Keindahan Pulau Enggano"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover brightness-75"
           />
         </div>
         
-        {/* Overlay - balanced 45% tint */}
+        {/* Overlay - darkened tint */}
         <div 
           className="absolute inset-0 z-10"
-          style={{ backgroundColor: 'rgba(8, 29, 39, 0.45)' }}
+          style={{ backgroundColor: 'rgba(8, 29, 39, 0.65)' }}
         ></div>
         
         {/* Particles */}

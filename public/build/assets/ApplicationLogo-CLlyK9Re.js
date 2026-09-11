@@ -1,0 +1,1 @@
+import{t as e}from"./app-DXd3-cvE.js";var t=e();function n({className:e=`h-10 w-auto`,...n}){return(0,t.jsx)(`img`,{src:`/images/brand-logo.png`,alt:`EngganoPedia Logo`,className:`object-contain ${e}`,...n})}export{n as t};

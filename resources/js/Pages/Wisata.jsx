@@ -196,11 +196,11 @@ export default function Wisata() {
           <img
             src="/images/hero-bg.jpg"
             alt="Wisata Pulau Enggano"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover brightness-75"
           />
         </div>
 
-        <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/30 to-dark/85 z-10 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-dark/85 via-dark/60 to-dark/90 z-10 pointer-events-none"></div>
 
         <div className="relative z-20 text-center px-4">
           <h1 ref={titleRef} className="hero-title font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-[1.2]">
